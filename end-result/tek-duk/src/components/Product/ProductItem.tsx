@@ -6,7 +6,7 @@ interface Props {
   price: string;
 }
 
-const Product = ({ imgSrc, imgAlt, name, description, price }: Props) => {
+const ProductItem = ({ imgSrc, imgAlt, name, description, price }: Props) => {
   return (
     <div aria-label={description}>
       <img src={imgSrc} alt={imgAlt} data-testid="product_thumbnail" />
@@ -16,4 +16,4 @@ const Product = ({ imgSrc, imgAlt, name, description, price }: Props) => {
   );
 };
 
-export default Product;
+export default ProductItem;

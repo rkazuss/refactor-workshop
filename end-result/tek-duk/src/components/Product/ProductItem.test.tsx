@@ -1,9 +1,9 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import Product from "./Product";
+import ProductItem from "./ProductItem";
 
 test("should render a product item with data from props", () => {
-  render(<Product name="some product" price="88.88" />);
+  render(<ProductItem name="some product" price="88.88" />);
   expect(screen.getByTestId("product_thumbnail")).toBeInTheDocument();
   expect(screen.getByTestId("product_name")).toBeInTheDocument();
   expect(screen.getByTestId("product_price")).toBeInTheDocument();
